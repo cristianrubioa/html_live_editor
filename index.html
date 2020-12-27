@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Live Editor</title>
 </head>
-<body>
+<body onload="showPreview()">
     <div class="code-area">
         <h3 id="header">HTML</h3>
-        <textarea id="html"></textarea>
+        <textarea id="html" oninput="showPreview()"></textarea>
         <h3 >CSS</h3>
-        <textarea id="css"></textarea>
+        <textarea id="css" oninput="showPreview()"></textarea>
         <h3 id="header">JS</h3>
-        <textarea id="js"></textarea>				
+        <textarea id="js" oninput="showPreview()"></textarea>				
       </div>
       <div class="preview-area">
         <iframe id="preview-window"></iframe>
       </div>
+<script src="js/script.js"></script>
 </body>
 </html>
